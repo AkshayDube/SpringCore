@@ -6,3 +6,9 @@ Demo3- Field Injection and Read value from properties file for setter injection
 
 Demo4- use P schema and C schema for setter injection and constructor injection respectively
 
+Demo5- Inject set,list and map using Constructor injection and Setter injection
+
+Demo6- Perform autowiring using xml
+
+
+

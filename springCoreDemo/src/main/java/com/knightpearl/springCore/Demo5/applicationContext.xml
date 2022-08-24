@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    ">
+
+	<context:component-scan base-package="com.knightpearl.springCore.Demo5"/>
+	
+    <!-- Define your beans here -->
+    
+    <bean id="student" class="com.knightpearl.springCore.Demo5.Student">
+	    <property name="mobileNumbers">
+		    <list>
+		    	<value>999999</value>
+		    	<value>88888</value>
+		    </list>
+		</property>
+		
+		<property name="marks">
+		    <map>
+		    	<entry key="English" value="98"/>
+		    	<entry key="Hindi" value="97"/>
+		    	<entry key="Maths" value="96"/>
+		    	<entry key="Science" value="95"/>
+		    	<entry key="Social Science" value="94"/>
+		    </map>
+		</property>
+		      	
+	    <property name="rating">
+		    <set>
+		    	<value>3</value><value>2</value><value>3</value><value>2</value>
+		    </set>
+		</property>   
+    </bean>
+    
+     <bean id="child" class="com.knightpearl.springCore.Demo5.Child">
+	    <constructor-arg index="0">
+		    <list>
+		    	<value>77777</value>
+		    	<value>55555</value>
+		    </list>
+		</constructor-arg>
+		
+		<constructor-arg index="1">
+		    <map>
+		    	<entry key="English" value="80"/>
+		    	<entry key="Hindi" value="70"/>
+		    	<entry key="Maths" value="60"/>
+		    	<entry key="Science" value="50"/>
+		    	<entry key="Social Science" value="40"/>
+		    </map>
+		</constructor-arg>
+		      	
+	    <constructor-arg index="2">
+		    <set>
+		    	<value>1</value><value>2</value><value>3</value><value>4</value>
+		    </set>
+		</constructor-arg>   
+    </bean>
+    
+    
+
+
+</beans>

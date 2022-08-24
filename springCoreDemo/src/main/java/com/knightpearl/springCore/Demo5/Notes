@@ -1,0 +1,7 @@
+Inject set,list and map using Constructor injection and Setter injection
+
+Create a class Student with List of mobile numbers, map of marks and set of ratings and perform setter injection of these things
+Create a class Child with List of mobile numbers, map of marks and set of ratings and perform constructor injection of these things
+
+
+
