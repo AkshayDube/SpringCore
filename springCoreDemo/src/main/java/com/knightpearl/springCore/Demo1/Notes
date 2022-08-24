@@ -1,0 +1,7 @@
+This is a basic spring project with only invesrion of control
+
+1. ApplicationContext file(file which you are using for xml configuration should be placed outside all packages in java folder)
+2. If you are using inside the package then give name with packagename/ApplicationContext in app.
+
+3. Make sure to add Spring Core and Spring Context maven dependency
+4. make sure to add boiler plate code for application context

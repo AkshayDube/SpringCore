@@ -1,0 +1,10 @@
+Field Injection and setting values by reading properties file
+
+Create a class Bike and inject value using Field Injection
+(Make sure to add support for component scanning)
+
+Create a class Car and inject value using Property files and using setter injection
+
+
+
+

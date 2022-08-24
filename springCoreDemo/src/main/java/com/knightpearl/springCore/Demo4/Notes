@@ -1,0 +1,10 @@
+Setter Injection and Constructor Injection
+
+Create a class Bike and inject value using Setter Injection
+
+Create a class Car and inject value using Constructor Injection (one value by using index and one by type)
+(Note if using type attribute for providing value then remember String get high priority)
+
+Create a class Auto and inject values using field Injection
+
+
