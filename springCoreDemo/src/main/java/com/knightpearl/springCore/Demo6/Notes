@@ -1,0 +1,5 @@
+Inject object as dependency and have Prototype scope
+
+Create a class Laptop and a class HardDisk . Inject Harddisk as dependency in Laptop class
+
+to specify lazy use lazy-int="true/false/default"

@@ -8,7 +8,7 @@ Demo4- use P schema and C schema for setter injection and constructor injection 
 
 Demo5- Inject set,list and map using Constructor injection and Setter injection
 
-Demo6- Perform autowiring using xml
+Demo6- Inject object as dependeny in another object 
 
 
 
