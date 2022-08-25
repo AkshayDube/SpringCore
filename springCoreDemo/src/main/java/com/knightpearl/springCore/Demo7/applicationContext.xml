@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+
+	<context:component-scan base-package="com.knightpearl.springCore.Demo7"/>
+	
+    <!-- Default list is ArrayList, you can have LL, Stack Vector as well -->
+    <util:list list-class="java.util.LinkedList" id="mobileNumbersList">
+    	<value>909090</value>
+		<value>8088808</value>
+    </util:list>
+    
+    <util:map map-class="java.util.TreeMap" id="marksMap">
+   		<entry key="Science" value="95"/>
+	    <entry key="Social Science" value="94"/>
+	    <entry key="English" value="98"/>
+    	<entry key="Hindi" value="97"/>
+    	<entry key="Maths" value="96"/>
+    </util:map>
+    
+    <bean id="student" class="com.knightpearl.springCore.Demo7.Student">
+	    <property name="mobileNumbers" ref="mobileNumbersList"/>	
+		<property name="marks" ref="marksMap"/>	      	
+	    <property name="rating">
+		    <set>
+		    	<value>3</value><value>2</value><value>3</value><value>2</value>
+		    </set>
+		</property>   
+    </bean>
+    
+     <bean id="child" class="com.knightpearl.springCore.Demo7.Child">
+	    <constructor-arg index="0">
+		    <list>
+		    	<value>77777</value>
+		    	<value>55555</value>
+		    </list>
+		</constructor-arg>
+		
+		<constructor-arg index="1">
+		    <map>
+		    	<entry key="English" value="80"/>
+		    	<entry key="Hindi" value="70"/>
+		    	<entry key="Maths" value="60"/>
+		    	<entry key="Science" value="50"/>
+		    	<entry key="Social Science" value="40"/>
+		    </map>
+		</constructor-arg>
+		      	
+	    <constructor-arg index="2">
+		    <set>
+		    	<value>1</value><value>2</value><value>3</value><value>4</value>
+		    </set>
+		</constructor-arg>   
+    </bean>
+    
+    
+
+
+</beans>
